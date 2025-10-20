@@ -1,0 +1,254 @@
+:root {
+  --bg-color: #f2f4f8;
+  --text-color: #333;
+  --nav-bg: #663399; 
+  --nav-link: #fff;
+  --nav-link-hover: #00B398; 
+  --section-border: #ccc;
+  --vagas-link: #663399;
+  --vagas-border: #663399;
+  --btn-vaga-bg: #663399;
+  --btn-vaga-hover: #50287A;
+  --btn-curso-bg: #00B398;
+  --btn-curso-hover: #009C84;
+  --footer-bg: #663399;
+  --footer-color: #fff;
+  --link-priv: #cce7ff;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+nav { background-color: var(--nav-bg); }
+.menu a { color: var(--nav-link); }
+.menu a:hover { color: var(--nav-link-hover); }
+
+.vagas a { color: var(--vagas-link); }
+.vagas-img { border: 2px solid var(--vagas-border); }
+.btn-vaga { background-color: var(--btn-vaga-bg); color: #fff; }
+.btn-vaga:hover { background-color: var(--btn-vaga-hover); }
+.botao-curso { background-color: var(--btn-curso-bg); color: #fff; }
+.botao-curso:hover { background-color: var(--btn-curso-hover); }
+
+footer { background-color: var(--footer-bg); color: var(--footer-color); text-align: center; }
+.link-priv { color: var(--link-priv); }
+.link-priv:hover { color: #fff; }
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.logo {
+  max-width: 150px;
+  height: auto;
+}
+
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  line-height: 1.5;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+nav {
+  background-color: var(--nav-bg);
+  padding: 15px 0;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.menu a {
+  color: var(--nav-link);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: var(--nav-link-hover);
+}
+
+header img {
+  max-width: 300px;
+  height: auto;
+}
+
+section {
+  padding: 40px 0;
+  border-bottom: 1px solid var(--section-border);
+  transition: border-color 0.3s;
+}
+
+h2 { font-size: 22px; margin-bottom: 10px; }
+h3 { font-size: 18px; margin-top: 8px; }
+p { font-size: 15px; margin-bottom: 15px; }
+
+.vagas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px 0;
+}
+
+.vagas a {
+  width: 200px;
+  text-decoration: none;
+  color: var(--vagas-link);
+  display: block;
+  transition: color 0.3s;
+}
+
+.vagas-img {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid var(--vagas-border);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+.vagas a:hover .vagas-img { transform: scale(1.05); }
+
+.vagas-subtitulo { font-size: 16px; font-weight: bold; margin-top: 10px; }
+
+.btn-vaga,
+.botao-curso {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #fff;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.btn-vaga { background-color: var(--btn-vaga-bg); }
+.btn-vaga:hover { background-color: var(--btn-vaga-hover); }
+
+.botao-curso { background-color: var(--btn-curso-bg); }
+.botao-curso:hover { background-color: var(--btn-curso-hover); }
+
+footer {
+  background-color: var(--footer-bg);
+  color: var(--footer-color);
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.6;
+  padding: 40px 15px 30px;
+  margin-top: 50px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.footer-content {
+  max-width: 700px;
+  margin: auto;
+}
+
+.footer-content p { margin-bottom: 20px; }
+
+.link-priv {
+  color: var(--link-priv);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.link-priv:hover { color: #fff; text-decoration: underline; }
+
+@media (max-width: 600px) {
+  body { font-size: 13px; }
+  .menu { gap: 10px; flex-wrap: nowrap; justify-content: space-between; overflow-x: auto; padding: 0 10px; }
+  .menu a { font-size: 11px; white-space: nowrap; }
+  .vagas { flex-wrap: wrap; justify-content: center; gap: 15px; }
+  .vagas a { flex: 0 0 calc(33.333% - 10px); max-width: calc(33.333% - 10px); text-align: center; }
+  .vagas-img { max-width: 100%; height: auto; }
+  .vagas-subtitulo { font-size: 12px; }
+  h2 { font-size: 18px; }
+  h3 { font-size: 14px; }
+  p { font-size: 12px; }
+  .btn-vaga, .botao-curso { font-size: 12px; padding: 10px 16px; }
+  footer { font-size: 11px; padding: 20px 10px; }
+}
+
+body.escuro {
+  --bg-color: #121212;
+  --text-color: #f2f2f2;
+  --nav-bg: #1f1f1f;
+  --nav-link: #f2f2f2;
+  --nav-link-hover: #00ff15;
+  --section-border: #333;
+  --vagas-link: #4da3ff;
+  --vagas-border: #4da3ff;
+  --btn-vaga-bg: #333;
+  --btn-vaga-hover: #555;
+  --btn-curso-bg: #444;
+  --btn-curso-hover: #666;
+  --footer-bg: #1f1f1f;
+  --footer-color: #ccc;
+  --link-priv: #80bfff;
+}
+
+#toggle-tema {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  margin-left: 15px;
+  transition: transform 0.2s ease;
+}
+
+#toggle-tema:hover { transform: scale(1.2); }
+
+
+
+
+.novas-vagas-img {
+  width: 100x;
+  height: 3px;
+  background-image: url('./img/aprendiz.png');
+  background-size: cover;
+  background-position: center;
+}
