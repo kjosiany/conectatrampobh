@@ -1,254 +1,195 @@
 :root {
-  --bg-color: #f2f4f8;
-  --text-color: #333;
-  --nav-bg: #663399; 
-  --nav-link: #fff;
-  --nav-link-hover: #00B398; 
-  --section-border: #ccc;
-  --vagas-link: #663399;
-  --vagas-border: #663399;
-  --btn-vaga-bg: #663399;
-  --btn-vaga-hover: #50287A;
-  --btn-curso-bg: #00B398;
-  --btn-curso-hover: #009C84;
-  --footer-bg: #663399;
-  --footer-color: #fff;
-  --link-priv: #cce7ff;
+  --bg-color: #f8f9fa;
+  --text-color: #2d3436;
+  --primary: #663399; 
+  --secondary: #00B398;
+  --white: #ffffff;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  --border-radius: 15px;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
-  margin: 0;
-  padding: 0;
+  margin: 0; padding: 0;
+  line-height: 1.6;
 }
 
-nav { background-color: var(--nav-bg); }
-.menu a { color: var(--nav-link); }
-.menu a:hover { color: var(--nav-link-hover); }
-
-.vagas a { color: var(--vagas-link); }
-.vagas-img { border: 2px solid var(--vagas-border); }
-.btn-vaga { background-color: var(--btn-vaga-bg); color: #fff; }
-.btn-vaga:hover { background-color: var(--btn-vaga-hover); }
-.botao-curso { background-color: var(--btn-curso-bg); color: #fff; }
-.botao-curso:hover { background-color: var(--btn-curso-hover); }
-
-footer { background-color: var(--footer-bg); color: var(--footer-color); text-align: center; }
-.link-priv { color: var(--link-priv); }
-.link-priv:hover { color: #fff; }
-
-.logo-container {
-  display: flex;
-  justify-content: center;
-  padding: 10px 0;
-}
-
-.logo {
-  max-width: 150px;
-  height: auto;
-}
-
-
-
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  margin: 0;
-  padding: 0;
-  font-size: 15px;
-  line-height: 1.5;
-  transition: background-color 0.3s, color 0.3s;
-}
 
 .container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 20px;
+  max-width: 1100px; 
+  margin: 0 auto;    
+  padding: 0 20px;   
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+header { 
+  padding: 30px 0; 
+  background: var(--white); 
+  text-align: center; 
+}
+.logo { max-width: 250px; height: auto; }
+
+nav { 
+  background-color: var(--primary); 
+  padding: 15px 0; 
+  position: sticky; 
+  top: 0; 
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 0;
+.menu { 
+  display: flex; 
+  justify-content: center; 
+  gap: 25px; 
+  flex-wrap: wrap; 
 }
+.menu a { color: white; text-decoration: none; font-weight: 600; font-size: 14px; transition: 0.3s; }
+.menu a:hover { color: var(--secondary); }
 
-nav {
-  background-color: var(--nav-bg);
-  padding: 15px 0;
-  width: 100%;
-  transition: background-color 0.3s;
-}
-
-.menu {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
-.menu a {
-  color: var(--nav-link);
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 16px;
-  transition: color 0.3s ease;
-}
-
-.menu a:hover {
-  color: var(--nav-link-hover);
-}
-
-header img {
-  max-width: 300px;
-  height: auto;
-}
-
-section {
-  padding: 40px 0;
-  border-bottom: 1px solid var(--section-border);
-  transition: border-color 0.3s;
-}
-
-h2 { font-size: 22px; margin-bottom: 10px; }
-h3 { font-size: 18px; margin-top: 8px; }
-p { font-size: 15px; margin-bottom: 15px; }
-
-.vagas {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  margin: 30px 0;
-}
-
-.vagas a {
-  width: 200px;
-  text-decoration: none;
-  color: var(--vagas-link);
-  display: block;
-  transition: color 0.3s;
-}
-
-.vagas-img {
-  width: 100%;
-  border-radius: 10px;
-  border: 2px solid var(--vagas-border);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
-}
-
-.vagas a:hover .vagas-img { transform: scale(1.05); }
-
-.vagas-subtitulo { font-size: 16px; font-weight: bold; margin-top: 10px; }
-
-.btn-vaga,
-.botao-curso {
-  display: inline-block;
-  padding: 12px 20px;
-  font-size: 14px;
-  font-weight: bold;
-  border-radius: 6px;
-  text-decoration: none;
-  color: #fff;
-  margin-top: 10px;
-  transition: background-color 0.3s;
-}
-
-.btn-vaga { background-color: var(--btn-vaga-bg); }
-.btn-vaga:hover { background-color: var(--btn-vaga-hover); }
-
-.botao-curso { background-color: var(--btn-curso-bg); }
-.botao-curso:hover { background-color: var(--btn-curso-hover); }
-
-footer {
-  background-color: var(--footer-bg);
-  color: var(--footer-color);
+.hero-section {
   text-align: center;
-  font-size: 14px;
-  line-height: 1.6;
-  padding: 40px 15px 30px;
-  margin-top: 50px;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.footer-content {
-  max-width: 700px;
-  margin: auto;
-}
-
-.footer-content p { margin-bottom: 20px; }
-
-.link-priv {
-  color: var(--link-priv);
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s;
-}
-
-.link-priv:hover { color: #fff; text-decoration: underline; }
-
-@media (max-width: 600px) {
-  body { font-size: 13px; }
-  .menu { gap: 10px; flex-wrap: nowrap; justify-content: space-between; overflow-x: auto; padding: 0 10px; }
-  .menu a { font-size: 11px; white-space: nowrap; }
-  .vagas { flex-wrap: wrap; justify-content: center; gap: 15px; }
-  .vagas a { flex: 0 0 calc(33.333% - 10px); max-width: calc(33.333% - 10px); text-align: center; }
-  .vagas-img { max-width: 100%; height: auto; }
-  .vagas-subtitulo { font-size: 12px; }
-  h2 { font-size: 18px; }
-  h3 { font-size: 14px; }
-  p { font-size: 12px; }
-  .btn-vaga, .botao-curso { font-size: 12px; padding: 10px 16px; }
-  footer { font-size: 11px; padding: 20px 10px; }
-}
-
-body.escuro {
-  --bg-color: #121212;
-  --text-color: #f2f2f2;
-  --nav-bg: #1f1f1f;
-  --nav-link: #f2f2f2;
-  --nav-link-hover: #00ff15;
-  --section-border: #333;
-  --vagas-link: #4da3ff;
-  --vagas-border: #4da3ff;
-  --btn-vaga-bg: #333;
-  --btn-vaga-hover: #555;
-  --btn-curso-bg: #444;
-  --btn-curso-hover: #666;
-  --footer-bg: #1f1f1f;
-  --footer-color: #ccc;
-  --link-priv: #80bfff;
-}
-
-#toggle-tema {
-  background: none;
-  border: none;
-  font-size: 20px;
-  cursor: pointer;
+  padding: 60px 30px;
+  background: linear-gradient(135deg, #663399 0%, #4b2670 100%);
   color: white;
-  margin-left: 15px;
-  transition: transform 0.2s ease;
+  border-radius: var(--border-radius);
+  margin: 40px 0;
+  box-shadow: 0 10px 30px rgba(102, 51, 153, 0.2);
 }
 
-#toggle-tema:hover { transform: scale(1.2); }
+.hero-section h1 { font-size: 2.5rem; margin: 0 0 15px 0; }
+.hero-section p { max-width: 700px; margin: 0 auto 20px; font-size: 1.1rem; opacity: 0.9; }
 
+.badges { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
+.badges span { 
+  background: rgba(255,255,255,0.15); 
+  padding: 6px 18px; 
+  border-radius: 50px; 
+  font-size: 13px; 
+  backdrop-filter: blur(5px);
+}
 
+main h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 600;
+  color: var(--primary);
+  font-size: 1.8rem;
+}
 
+.vagas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+  justify-items: center;
+}
 
-.novas-vagas-img {
-  width: 100x;
-  height: 3px;
-  background-image: url('./img/aprendiz.png');
+.vaga-card {
+  background: var(--white);
+  border-radius: 12px;
+  text-decoration: none;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #eee;
+}
+
+.vaga-card:hover { 
+  transform: translateY(-10px); 
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+  border-color: var(--primary);
+}
+
+.card-image {
+  height: 160px;
   background-size: cover;
   background-position: center;
+}
+
+.card-content { 
+  padding: 20px; 
+  text-align: center; 
+  background: white;
+}
+.card-content h3 { font-size: 17px; margin: 0 0 12px 0; color: #333; }
+.card-content span { 
+  color: var(--primary); 
+  font-weight: bold; 
+  font-size: 14px; 
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cta-box {
+  background: var(--white);
+  padding: 50px 30px;
+  border-radius: var(--border-radius);
+  text-align: center;
+  margin: 40px 0;
+  box-shadow: var(--shadow);
+}
+
+.cta-box.alt { border-top: 5px solid var(--secondary); }
+
+.btn-vaga, .botao-curso {
+  padding: 15px 35px;
+  border-radius: 50px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  transition: 0.3s;
+  margin-top: 15px;
+}
+.btn-vaga { background: var(--primary); }
+.btn-vaga:hover { background: #4b2670; transform: scale(1.05); }
+
+.botao-curso { background: var(--secondary); }
+.botao-curso:hover { background: #008f7a; transform: scale(1.05); }
+
+#sobre-nos, #contato {
+  text-align: center;
+  padding: 60px 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #25D366;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3);
+  z-index: 999;
+  transition: 0.3s;
+}
+.whatsapp-float:hover { transform: scale(1.1); }
+
+footer { 
+  background: #1a1a1a; 
+  color: #999; 
+  padding: 50px 20px; 
+  text-align: center; 
+  margin-top: 80px; 
+}
+.footer-content a { color: #fff; text-decoration: none; font-size: 14px; }
+.footer-content a:hover { text-decoration: underline; }
+
+@media (max-width: 600px) {
+  .hero-section { padding: 40px 20px; margin: 20px 0; }
+  .hero-section h1 { font-size: 1.8rem; }
+  .vagas-grid { grid-template-columns: 1fr; } 
+  .vaga-card { max-width: 100%; }
+  .menu { gap: 15px; }
 }
