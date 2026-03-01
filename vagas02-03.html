@@ -3,95 +3,121 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vagas 02/03
-  </title>
+  <title>Vagas 02/03 - ConectaTrampo BH</title>
 
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KVR6YQ758Y"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-KVR6YQ758Y');
-</script>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KVR6YQ758Y"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-KVR6YQ758Y');
+  </script>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  
   <style>
+    :root {
+      --primary: #663399;
+      --secondary: #00B398;
+      --bg: #f8f9fa;
+      --text: #333;
+    }
+
     body {
       font-family: 'Poppins', sans-serif;
-      background-color: #f2f4f8;
-      color: #333;
-      margin: 0;
-      padding: 0;
+      background-color: var(--bg);
+      color: var(--text);
+      margin: 0; padding: 0;
+      line-height: 1.6;
     }
 
     .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 0 20px; /* Espaço nas laterais que você pediu */
     }
 
     header {
       text-align: center;
-      padding: 20px 0;
+      padding: 30px 0;
+      background: #fff;
+      border-bottom: 1px solid #eee;
     }
 
-    header img {
-      max-width: 250px;
-    }
+    header img { max-width: 220px; height: auto; }
 
     h2 {
       text-align: center;
-      margin-bottom: 40px;
-      color: #663399;
+      margin: 40px 0;
+      color: var(--primary);
+      font-weight: 600;
     }
 
+    .aviso {
+      background-color: #e3fcf7; 
+      border-left: 5px solid var(--secondary); 
+      padding: 20px; 
+      border-radius: 12px; 
+      margin-bottom: 35px;
+      font-size: 0.95rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    /* Estilo dos Cards de Vaga */
     .vaga {
       background: #fff;
-      border-radius: 10px;
-      padding: 20px;
+      border-radius: 15px;
+      padding: 25px;
       margin-bottom: 30px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+      border: 1px solid #efefef;
+      transition: transform 0.2s;
     }
+
+    .vaga:hover { transform: translateY(-5px); }
 
     .vaga h3 {
       margin-top: 0;
-      color: #663399;
+      color: var(--primary);
+      font-size: 1.3rem;
+      border-bottom: 2px solid #f8f8f8;
+      padding-bottom: 10px;
+      margin-bottom: 15px;
     }
 
-    .vaga h5 {
-      margin: 10px 0;
-      font-weight: normal;
-    }
+    .vaga p { margin: 8px 0; font-size: 0.95rem; }
+    .vaga strong { color: #555; }
 
     footer {
-      background-color: #663399;
+      background-color: #1a1a1a;
       color: #fff;
-      padding: 30px 15px;
+      padding: 50px 20px;
       text-align: center;
-      font-size: 14px;
-      line-height: 1.6;
-      margin-top: 50px;
+      margin-top: 60px;
     }
 
-    .footer-content {
-      max-width: 700px;
-      margin: auto;
+    .btn-voltar {
+      display: inline-block;
+      margin-top: 15px;
+      color: var(--secondary);
+      text-decoration: none;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="./img/ConectaTrampo.png" alt="Logo ConectaTrampo" />
+    <a href="index.html">
+      <img src="./img/ConectaTrampo.png" alt="Logo ConectaTrampo" />
+    </a>
   </header>
 
   <div class="container">
-    <h2>📋 Vagas em Belo Horizonte do dia 02/03</h2>
+    <h2>📋 Vagas em Belo Horizonte - 02/03</h2>
 
-  <section class="aviso" style="background-color: #00B398; border: 1px solid #663399; padding: 15px; border-radius: 10px; margin-bottom: 20px;">
-  <p><strong>🚨 Aviso:</strong> Todas as vagas aqui são <strong>gratuitas</strong> e públicas. Não cobramos nada para divulgar e não temos vínculo com as empresas.</p>
-  <p>⚠️ <strong>Nunca pague para se candidatar</strong> e não envie documentos pessoais por WhatsApp sem confirmação.</p>
-</section>
+    <section class="aviso">
+      <p><strong>🚨 Atenção:</strong> Todas as vagas são <strong>gratuitas</strong> e públicas. Nunca pague para se candidatar ou realizar exames admissionais.</p>
+    </section>
 
 <div class="vaga">
   <h3><strong>Operador(a) de Caixa e Repositor - Magazine Diniz</strong></h3>
@@ -549,10 +575,12 @@
 
 <footer>
     <div class="footer-content">
-      <p>© 2025 — Todos os direitos são reservados às empresas anunciadas.<br>
+      <p>© 2026 — Todos os direitos reservados.<br>
       Este site apenas organiza e divulga vagas de emprego já publicadas em canais públicos de Uberlândia.<br>
       Não cobramos pela divulgação nem temos vínculo direto com as empresas listadas.<br>
       Caso alguma empresa deseje remover ou alterar uma vaga publicada, entre em contato.</p>
+    <a href="index.html" class="btn-voltar">← Voltar para a página inicial</a>
+      <p style="font-size: 12px; color: #777; margin-top: 30px;"></p>
     </div>
   </footer>
   <script>
