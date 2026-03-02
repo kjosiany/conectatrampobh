@@ -9,12 +9,12 @@
   
   <style>
     :root {
-      --primary: #663399;   
-      --primary-dark: #4b2670;
-      --secondary: #00B398; 
+      --primary: #663399;      /* Roxo BH */
+      --primary-dark: #4b2670; /* Roxo Escuro BH */
+      --secondary: #00B398;    /* Verde Água BH */
       --bg-color: #f8f9fa;
       --white: #ffffff;
-      --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      --shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     }
 
     body {
@@ -25,38 +25,50 @@
       line-height: 1.6;
     }
 
+    /* HEADER IMPACTANTE COM DEGRADÊ (ESTILO BH) */
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      padding: 50px 20px;
+      text-align: center;
+      color: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    header img { 
+      max-width: 220px; 
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+      margin-bottom: 10px;
+    }
+
     .container {
       max-width: 850px;
-      margin: 0 auto;
-      padding: 20px;
+      margin: -30px auto 0; /* Sobe o conteúdo para cima do degradê */
+      padding: 0 20px 40px;
     }
 
-    header {
-      text-align: center;
-      padding: 30px 0;
-      background: var(--white);
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-      margin-bottom: 20px;
-    }
-
-    header img {
-      max-width: 220px;
-      height: auto;
+    .btn-voltar {
+      display: inline-block;
+      margin-bottom: 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      position: relative;
     }
 
     h2 {
       text-align: center;
-      color: var(--primary);
-      margin: 30px 0;
+      color: var(--primary-dark);
+      margin: 40px 0 30px;
       font-weight: 600;
-      font-size: 1.6rem;
+      font-size: 1.8rem;
     }
 
     /* CARDS DOS CURSOS */
     .curso-box {
       background-color: var(--white);
       border-radius: 15px;
-      padding: 25px;
+      padding: 30px;
       margin-bottom: 25px;
       box-shadow: var(--shadow);
       border: 1px solid #eee;
@@ -88,37 +100,30 @@
       background-color: var(--primary);
       color: #fff;
       text-decoration: none;
-      padding: 12px 28px;
+      padding: 12px 30px;
       border-radius: 50px;
       font-weight: 600;
       font-size: 14px;
       transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(102, 51, 153, 0.2);
     }
 
     .botao-curso:hover {
       background-color: var(--secondary);
       box-shadow: 0 5px 15px rgba(0, 179, 152, 0.3);
       transform: scale(1.05);
-    }
-
-    .btn-voltar {
-      display: inline-block;
-      margin-bottom: 20px;
-      color: var(--primary);
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 14px;
+      color: white;
     }
 
     .aviso {
-      font-size: 13px;
-      margin-top: 40px;
-      padding: 20px;
       background: #fff5f5;
+      border-left: 4px solid var(--primary);
+      padding: 20px;
       border-radius: 10px;
-      color: #a94442;
+      margin-top: 40px;
+      font-size: 13px;
+      color: #666;
       text-align: center;
-      border-left: 4px solid #a94442;
     }
 
     footer {
@@ -130,15 +135,10 @@
       margin-top: 60px;
     }
 
-    .footer-content {
-      max-width: 700px;
-      margin: auto;
-      opacity: 0.9;
-    }
-
     @media (max-width: 600px) {
-      h2 { font-size: 1.3rem; }
-      .curso-box { padding: 20px; }
+      h2 { font-size: 1.4rem; }
+      .curso-box { padding: 25px; }
+      header { padding: 40px 15px; }
     }
   </style>
 </head>
@@ -151,49 +151,49 @@
   <main class="container">
     <a href="index.html" class="btn-voltar">← Voltar para Vagas BH</a>
 
-    <section id="formalize">
-      <h2>📚 Cursos Gratuitos e Certificados (BH)</h2>
+    <div style="background: white; padding: 10px; border-radius: 15px; box-shadow: var(--shadow); margin-top: 20px;">
+      <h2>📚 Cursos Gratuitos e Certificados</h2>
 
       <div class="curso-box">
         <h4>🎓 Fundação Bradesco</h4>
-        <p>Referência em cursos online gratuitos: TI, Finanças, Administração e Educação. Certificado incluso sem custo.</p>
-        <a href="https://www.ev.org.br/" target="_blank" class="botao-curso">Acessar Plataforma</a>
+        <p>A maior plataforma de cursos gratuitos do Brasil. Áreas de TI, Administração, Finanças e muito mais. Certificado gratuito incluso.</p>
+        <a href="https://www.ev.org.br/" target="_blank" class="botao-curso">Acessar Cursos</a>
       </div>
 
       <div class="curso-box">
-        <h4>🛠 SENAI</h4>
-        <p>Cursos focados na indústria e tecnologia. Excelente para quem busca qualificação técnica rápida e de qualidade.</p>
-        <a href="https://www.sp.senai.br/" target="_blank" class="botao-curso">Acessar Plataforma</a>
+        <h4>🛠 SENAI Minas</h4>
+        <p>Referência em capacitação técnica industrial e tecnológica. Cursos focados no que o mercado de BH e região mais precisa.</p>
+        <a href="https://www.senaimg.com.br/" target="_blank" class="botao-curso">Acessar Cursos</a>
       </div>
 
       <div class="curso-box">
         <h4>💼 Sebrae</h4>
-        <p>Cursos de gestão, marketing e finanças. Perfeito para quem quer se destacar no mundo dos negócios e empreendedorismo.</p>
-        <a href="https://www.sebrae.com.br/sites/PortalSebrae/cursosonline" target="_blank" class="botao-curso">Acessar Plataforma</a>
+        <p>Ideal para quem busca se especializar em marketing, vendas, finanças e empreendedorismo. Prático e rápido.</p>
+        <a href="https://www.sebrae.com.br/sites/PortalSebrae/cursosonline" target="_blank" class="botao-curso">Acessar Cursos</a>
       </div>
 
       <div class="curso-box">
-        <h4>🏛 FGV</h4>
-        <p>Conteúdo de alto nível da Fundação Getulio Vargas em áreas como Direito, Economia e Administração.</p>
-        <a href="https://educacao-executiva.fgv.br/cursos/gratuitos" target="_blank" class="botao-curso">Acessar Plataforma</a>
+        <h4>🏛 FGV Online</h4>
+        <p>Aulas de alto nível em Direito, Gestão e Economia com a qualidade da Fundação Getulio Vargas.</p>
+        <a href="https://educacao-executiva.fgv.br/cursos/gratuitos" target="_blank" class="botao-curso">Acessar Cursos</a>
       </div>
 
       <div class="curso-box">
         <h4>💻 Microsoft Learn</h4>
-        <p>Desenvolva habilidades em Inteligência Artificial, Nuvem e Programação com o suporte oficial da Microsoft.</p>
-        <a href="https://learn.microsoft.com/pt-br/training/" target="_blank" class="botao-curso">Acessar Plataforma</a>
+        <p>Especialize-se em Inteligência Artificial, Nuvem e Dados com os cursos e certificações oficiais da Microsoft.</p>
+        <a href="https://learn.microsoft.com/pt-br/training/" target="_blank" class="botao-curso">Acessar Cursos</a>
       </div>
 
       <div class="aviso">
-        ⚠️ <strong>Nota:</strong> O ConectaTrampo BH apenas facilita o acesso indicando portais oficiais. Não emitimos certificados e não temos vínculo com as instituições.
+        ⚠️ <strong>Nota:</strong> O ConectaTrampo BH apenas indica portais de confiança para ajudar sua carreira. Não emitimos certificados e não somos responsáveis pelas plataformas citadas.
       </div>
-    </section>
+    </div>
   </main>
 
   <footer>
     <div class="footer-content">
-      <p>© 2025 — ConectaTrampo BH<br>
-        O portal que conecta você ao mercado de trabalho mineiro de forma 100% gratuita.
+      <p>© 2026 — ConectaTrampo BH<br>
+        Qualificando o trabalhador mineiro para as melhores oportunidades.
       </p>
     </div>
   </footer>
