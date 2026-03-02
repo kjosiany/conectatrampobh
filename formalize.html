@@ -3,159 +3,200 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Formalize-se | ConectaTrampo</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <title>Formalize-se | ConectaTrampo BH</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  
   <style>
+    :root {
+      --primary: #663399;   
+      --primary-dark: #4b2670;
+      --secondary: #00B398; 
+      --bg-color: #f8f9fa;
+      --white: #ffffff;
+      --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    }
+
     body {
       font-family: 'Poppins', sans-serif;
-      background-color: #f2f4f8;
+      background-color: var(--bg-color);
       color: #333;
-      margin: 0;
-      padding: 0;
+      margin: 0; padding: 0;
+      line-height: 1.6;
     }
 
     .container {
-      max-width: 900px;
-      margin: auto;
+      max-width: 850px;
+      margin: 0 auto;
       padding: 20px;
     }
 
     header {
       text-align: center;
-      padding: 20px 0;
+      padding: 30px 0;
+      background: var(--white);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      margin-bottom: 20px;
     }
 
     header img {
-      max-width: 250px;
+      max-width: 220px;
+      height: auto;
     }
 
-    #formalize h2 {
-      font-size: 26px;
-      margin-bottom: 20px;
-      color: #222;
+    h2 {
+      text-align: center;
+      color: var(--primary);
+      margin: 30px 0;
+      font-weight: 600;
+      font-size: 1.6rem;
     }
 
+    /* CARDS DOS CURSOS */
     .curso-box {
-      background-color: #ffffff;
-      border-radius: 10px;
-      padding: 20px;
+      background-color: var(--white);
+      border-radius: 15px;
+      padding: 25px;
       margin-bottom: 25px;
-      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+      box-shadow: var(--shadow);
+      border: 1px solid #eee;
+      transition: transform 0.3s ease;
+    }
+
+    .curso-box:hover {
+      transform: translateY(-5px);
+      border-color: var(--secondary);
     }
 
     .curso-box h4 {
-      font-size: 20px;
-      margin-bottom: 10px;
-      color: #663399;
+      font-size: 1.3rem;
+      margin: 0 0 12px 0;
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      gap: 10px;
     }
 
     .curso-box p {
-      font-size: 15px;
-      line-height: 1.6;
+      font-size: 0.95rem;
       color: #555;
+      margin-bottom: 20px;
     }
 
     .botao-curso {
       display: inline-block;
-      margin-top: 10px;
-      background-color: #663399;
+      background-color: var(--primary);
       color: #fff;
       text-decoration: none;
-      padding: 10px 20px;
-      border-radius: 6px;
-      font-weight: 500;
-      transition: background 0.3s;
+      padding: 12px 28px;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 14px;
+      transition: all 0.3s ease;
     }
 
     .botao-curso:hover {
-      background-color: #663399;
+      background-color: var(--secondary);
+      box-shadow: 0 5px 15px rgba(0, 179, 152, 0.3);
+      transform: scale(1.05);
+    }
+
+    .btn-voltar {
+      display: inline-block;
+      margin-bottom: 20px;
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
     }
 
     .aviso {
-      font-size: 14px;
+      font-size: 13px;
       margin-top: 40px;
+      padding: 20px;
+      background: #fff5f5;
+      border-radius: 10px;
       color: #a94442;
-      font-style: italic;
-      
-    }
-    
-    footer {
-      background-color:#663399;
-      color: #fff;
-      padding: 30px 15px;
       text-align: center;
-      font-size: 14px;
-      line-height: 1.6;
-      margin-top: 50px;
+      border-left: 4px solid #a94442;
+    }
+
+    footer {
+      background-color: var(--primary);
+      color: #fff;
+      padding: 50px 20px;
+      text-align: center;
+      font-size: 13px;
+      margin-top: 60px;
     }
 
     .footer-content {
       max-width: 700px;
       margin: auto;
+      opacity: 0.9;
+    }
+
+    @media (max-width: 600px) {
+      h2 { font-size: 1.3rem; }
+      .curso-box { padding: 20px; }
     }
   </style>
 </head>
 <body>
-  <header class="center">
+
+  <header>
     <img src="./img/ConectaTrampo.png" alt="Logo ConectaTrampo" />
   </header>
 
   <main class="container">
+    <a href="index.html" class="btn-voltar">← Voltar para Vagas BH</a>
+
     <section id="formalize">
-      <h2>📚 Plataformas com Cursos Gratuitos e Certificados</h2>
+      <h2>📚 Cursos Gratuitos e Certificados (BH)</h2>
 
       <div class="curso-box">
         <h4>🎓 Fundação Bradesco</h4>
-        <p>Cursos em TI, Finanças, Administração, Educação e mais. Totalmente gratuitos e com certificado.</p>
-        <a href="https://www.ev.org.br/" target="_blank" class="botao-curso">Acesse o Site</a>
+        <p>Referência em cursos online gratuitos: TI, Finanças, Administração e Educação. Certificado incluso sem custo.</p>
+        <a href="https://www.ev.org.br/" target="_blank" class="botao-curso">Acessar Plataforma</a>
       </div>
 
       <div class="curso-box">
         <h4>🛠 SENAI</h4>
-        <p>Capacitação técnica e profissional com foco no mercado de trabalho. Cursos em indústria, TI, gestão, entre outros.</p>
-        <a href="https://www.sp.senai.br/" target="_blank" class="botao-curso">Acesse o Site</a>
+        <p>Cursos focados na indústria e tecnologia. Excelente para quem busca qualificação técnica rápida e de qualidade.</p>
+        <a href="https://www.sp.senai.br/" target="_blank" class="botao-curso">Acessar Plataforma</a>
       </div>
 
       <div class="curso-box">
         <h4>💼 Sebrae</h4>
-        <p>Para quem quer empreender: marketing, finanças, gestão e inovação. Cursos práticos e com certificado.</p>
-        <a href="https://www.sebrae.com.br/sites/PortalSebrae/cursosonline" target="_blank" class="botao-curso">Acesse o Site</a>
+        <p>Cursos de gestão, marketing e finanças. Perfeito para quem quer se destacar no mundo dos negócios e empreendedorismo.</p>
+        <a href="https://www.sebrae.com.br/sites/PortalSebrae/cursosonline" target="_blank" class="botao-curso">Acessar Plataforma</a>
       </div>
 
       <div class="curso-box">
         <h4>🏛 FGV</h4>
-        <p>Cursos de curta duração em áreas como direito, finanças, marketing, economia e administração.</p>
-        <a href="https://educacao-executiva.fgv.br/cursos/gratuitos" target="_blank" class="botao-curso">Acesse o Site</a>
-      </div>
-
-      <div class="curso-box">
-        <h4>🎓 Cruzeiro do Sul Virtual</h4>
-        <p>Cursos livres em várias áreas, como saúde, educação, tecnologia e negócios. Conteúdo acessível e certificado gratuito.</p>
-        <a href="https://cursos.cruzeirodosulvirtual.com.br/cursos-livres" target="_blank" class="botao-curso">Acesse o Site</a>
+        <p>Conteúdo de alto nível da Fundação Getulio Vargas em áreas como Direito, Economia e Administração.</p>
+        <a href="https://educacao-executiva.fgv.br/cursos/gratuitos" target="_blank" class="botao-curso">Acessar Plataforma</a>
       </div>
 
       <div class="curso-box">
         <h4>💻 Microsoft Learn</h4>
-        <p>Aprenda programação, inteligência artificial, banco de dados e mais com cursos oficiais da Microsoft.</p>
-        <a href="https://learn.microsoft.com/pt-br/training/" target="_blank" class="botao-curso">Acesse o Site</a>
+        <p>Desenvolva habilidades em Inteligência Artificial, Nuvem e Programação com o suporte oficial da Microsoft.</p>
+        <a href="https://learn.microsoft.com/pt-br/training/" target="_blank" class="botao-curso">Acessar Plataforma</a>
       </div>
 
-      <p class="aviso">
-        ⚠️ Não oferecemos suporte direto — apenas indicamos plataformas confiáveis para apoiar a sua formação profissional.
-      </p>
+      <div class="aviso">
+        ⚠️ <strong>Nota:</strong> O ConectaTrampo BH apenas facilita o acesso indicando portais oficiais. Não emitimos certificados e não temos vínculo com as instituições.
+      </div>
     </section>
-  
-  
+  </main>
+
   <footer>
     <div class="footer-content">
-      <p>© 2025 — Todos os direitos são reservados às empresas anunciadas.<br>
-        Este site apenas organiza e divulga vagas de emprego já publicadas em canais públicos de Uberlândia.
-        Não cobramos pela divulgação nem temos vínculo direto com as empresas listadas.<br>
-        Caso alguma empresa deseje remover ou alterar uma vaga publicada, entre em contato.
+      <p>© 2025 — ConectaTrampo BH<br>
+        O portal que conecta você ao mercado de trabalho mineiro de forma 100% gratuita.
       </p>
     </div>
   </footer>
-  </main>
-</body>
 
+</body>
 </html>
