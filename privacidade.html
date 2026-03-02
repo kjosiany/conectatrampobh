@@ -9,11 +9,12 @@
   
   <style>
     :root {
-      --primary: #663399;  
-      --secondary: #00B398;
+      --primary: #663399;      
+      --primary-dark: #4b2670; 
+      --secondary: #00B398;    
       --bg-color: #f8f9fa;
       --white: #ffffff;
-      --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      --shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     }
 
     body {
@@ -24,36 +25,47 @@
       line-height: 1.8;
     }
 
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      padding: 60px 20px;
+      text-align: center;
+      color: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    header img { 
+      max-width: 200px; 
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+    }
+
     .container {
       max-width: 800px;
-      margin: 0 auto;
-      padding: 40px 20px;
+      margin: -40px auto 0; 
+      padding: 0 20px 40px;
     }
 
-    header {
-      text-align: center;
-      padding: 30px 0;
-      background: var(--white);
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    .btn-voltar {
+      display: inline-block;
+      margin-bottom: 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      position: relative;
     }
 
-    header img {
-      max-width: 200px;
-      height: auto;
-    }
-
+    /* CARD DE CONTEÚDO */
     .content-box {
       background-color: var(--white);
       border-radius: 15px;
       padding: 40px;
       box-shadow: var(--shadow);
       border: 1px solid #eee;
-      margin-top: 30px;
     }
 
     h2 {
       text-align: center;
-      color: var(--primary);
+      color: var(--primary-dark);
       margin-top: 0;
       margin-bottom: 30px;
       font-weight: 600;
@@ -71,22 +83,14 @@
     }
 
     a {
-      color: var(--secondary);
+      color: var(--primary);
       text-decoration: none;
       font-weight: 600;
     }
 
     a:hover {
       text-decoration: underline;
-    }
-
-    .btn-voltar {
-      display: inline-block;
-      margin-bottom: 10px;
-      color: var(--primary);
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 14px;
+      color: var(--secondary);
     }
 
     footer {
@@ -95,7 +99,6 @@
       padding: 50px 20px;
       text-align: center;
       font-size: 13px;
-      margin-top: 60px;
     }
 
     .footer-content {
@@ -107,6 +110,7 @@
     @media (max-width: 600px) {
       .content-box { padding: 25px; }
       h2 { font-size: 1.5rem; }
+      header { padding: 50px 15px; }
     }
   </style>
 </head>
@@ -124,7 +128,7 @@
 
       <p>O site <strong>ConectaTrampoBH.com.br</strong> respeita a sua privacidade e preza pela transparência com nossos usuários mineiros.</p>
 
-      <p>Utilizamos cookies para personalizar conteúdo e anúncios, oferecer recursos de mídia social e analisar o tráfego em nosso portal. Essas informações nos ajudam a tornar o site mais eficiente para quem busca emprego em Belo Horizonte e região metropolitana.</p>
+      <p>Utilizamos cookies para personalizar conteúdo e anúncios, oferecer recursos de mídia social e analisar o tráfego em nosso portal. Essas informações nos ajudam a tornar o site mais eficiente para quem busca emprego em <strong>Belo Horizonte e região metropolitana</strong>.</p>
 
       <p>As informações sobre o uso do site podem ser compartilhadas com nossos parceiros de publicidade e análise (como o Google) de forma <strong>totalmente anônima</strong>.</p>
 
@@ -137,7 +141,7 @@
 
   <footer>
     <div class="footer-content">
-      <p>© 2025 — ConectaTrampo BH<br>
+      <p>© 2026 — ConectaTrampo BH<br>
         Este portal é um agregador gratuito de vagas públicas em Belo Horizonte.<br>
         Não possuímos vínculo com as empresas e não realizamos cobranças de candidatos.
       </p>
