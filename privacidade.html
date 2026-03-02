@@ -3,68 +3,110 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Política de Privacidade | ConectaTrampo</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <title>Política de Privacidade | ConectaTrampo BH</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  
   <style>
+    :root {
+      --primary: #663399;  
+      --secondary: #00B398;
+      --bg-color: #f8f9fa;
+      --white: #ffffff;
+      --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    }
+
     body {
       font-family: 'Poppins', sans-serif;
-      background-color: #f2f4f8;
+      background-color: var(--bg-color);
       color: #333;
-      margin: 0;
-      padding: 0;
+      margin: 0; padding: 0;
+      line-height: 1.8;
     }
 
     .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
     }
 
     header {
       text-align: center;
-      padding: 30px 0 10px;
+      padding: 30px 0;
+      background: var(--white);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     }
 
     header img {
-      max-width: 250px;
+      max-width: 200px;
+      height: auto;
+    }
+
+    .content-box {
+      background-color: var(--white);
+      border-radius: 15px;
+      padding: 40px;
+      box-shadow: var(--shadow);
+      border: 1px solid #eee;
+      margin-top: 30px;
     }
 
     h2 {
-      font-size: 26px;
       text-align: center;
-      color: #663399;
-      margin-top: 20px;
+      color: var(--primary);
+      margin-top: 0;
       margin-bottom: 30px;
+      font-weight: 600;
+      font-size: 1.8rem;
     }
 
     p {
-      font-size: 15px;
-      line-height: 1.7;
+      font-size: 0.95rem;
       margin-bottom: 20px;
+      color: #444;
+    }
+
+    strong {
+      color: var(--primary);
     }
 
     a {
-      color:#0033ff;;
+      color: var(--secondary);
       text-decoration: none;
+      font-weight: 600;
     }
 
     a:hover {
       text-decoration: underline;
     }
 
-    footer {
-      background-color:#663399;
-      color: #fff;
-      padding: 30px 15px;
-      text-align: center;
+    .btn-voltar {
+      display: inline-block;
+      margin-bottom: 10px;
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
       font-size: 14px;
-      line-height: 1.6;
-      margin-top: 50px;
+    }
+
+    footer {
+      background-color: var(--primary);
+      color: #fff;
+      padding: 50px 20px;
+      text-align: center;
+      font-size: 13px;
+      margin-top: 60px;
     }
 
     .footer-content {
       max-width: 700px;
       margin: auto;
+      opacity: 0.9;
+    }
+
+    @media (max-width: 600px) {
+      .content-box { padding: 25px; }
+      h2 { font-size: 1.5rem; }
     }
   </style>
 </head>
@@ -75,29 +117,32 @@
   </header>
 
   <main class="container">
-    <h2>Política de Privacidade</h2>
+    <a href="index.html" class="btn-voltar">← Voltar para Vagas BH</a>
 
-    <p>O site <strong>ConectaTrampoUdi.com.br</strong> respeita a sua privacidade.</p>
+    <div class="content-box">
+      <h2>Política de Privacidade</h2>
 
-    <p>Utilizamos cookies para personalizar conteúdo e anúncios, oferecer recursos de mídia social e analisar nosso tráfego.</p>
+      <p>O site <strong>ConectaTrampoBH.com.br</strong> respeita a sua privacidade e preza pela transparência com nossos usuários mineiros.</p>
 
-    <p>As informações sobre o uso do site podem ser compartilhadas com parceiros de publicidade e análise, como o Google, de forma anônima.</p>
+      <p>Utilizamos cookies para personalizar conteúdo e anúncios, oferecer recursos de mídia social e analisar o tráfego em nosso portal. Essas informações nos ajudam a tornar o site mais eficiente para quem busca emprego em Belo Horizonte e região metropolitana.</p>
 
-    <p>Ao continuar navegando, você concorda com a nossa política de privacidade.</p>
+      <p>As informações sobre o uso do site podem ser compartilhadas com nossos parceiros de publicidade e análise (como o Google) de forma <strong>totalmente anônima</strong>.</p>
 
-    <p>Para mais informações sobre como o Google usa dados, visite:  
-    <a href="https://policies.google.com/technologies/partner-sites" target="_blank">política de parceiros do Google</a>.</p>
+      <p>Ao continuar navegando em nosso portal, você concorda com a nossa política de privacidade e o uso de cookies para melhoria da sua experiência.</p>
+
+      <p>Para mais detalhes sobre como o Google processa os dados coletados, visite a 
+      <a href="https://policies.google.com/technologies/partner-sites" target="_blank">Política de Parceiros do Google</a>.</p>
+    </div>
   </main>
 
   <footer>
     <div class="footer-content">
-      <p>© 2025 — Todos os direitos são reservados às empresas anunciadas.<br>
-        Este site apenas organiza e divulga vagas de emprego já publicadas em canais públicos de Uberlândia.
-        Não cobramos pela divulgação nem temos vínculo direto com as empresas listadas.<br>
-        Caso alguma empresa deseje remover ou alterar uma vaga publicada, entre em contato.
+      <p>© 2025 — ConectaTrampo BH<br>
+        Este portal é um agregador gratuito de vagas públicas em Belo Horizonte.<br>
+        Não possuímos vínculo com as empresas e não realizamos cobranças de candidatos.
       </p>
     </div>
   </footer>
-  
+
 </body>
 </html>
